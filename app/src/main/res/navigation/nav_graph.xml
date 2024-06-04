@@ -8,7 +8,11 @@
         android:id="@+id/mainMenuFragment"
         android:name="com.example.quiz_kingdom.presentation.main_menu.MainMenuFragment"
         android:label="fragment_main_menu"
-        tools:layout="@layout/fragment_main_menu" />
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_chooseGameModeFragment"
+            app:destination="@id/chooseGameModeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/startScreenFragment"
         android:name="com.example.quiz_kingdom.presentation.start_screen.StartScreenFragment"
@@ -18,4 +22,18 @@
             android:id="@+id/action_startScreenFragment_to_mainMenuFragment"
             app:destination="@id/mainMenuFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/chooseGameModeFragment"
+        android:name="com.example.quiz_kingdom.presentation.game_mode.ChooseGameModeFragment"
+        android:label="fragment_choose_game_mode"
+        tools:layout="@layout/fragment_choose_game_mode" >
+        <action
+            android:id="@+id/action_chooseGameModeFragment_to_playByCodeFragment"
+            app:destination="@id/playByCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playByCodeFragment"
+        android:name="com.example.quiz_kingdom.presentation.play_by_code.PlayByCodeFragment"
+        android:label="fragment_play_by_code"
+        tools:layout="@layout/fragment_play_by_code" />
 </navigation>

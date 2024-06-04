@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#75a25f"
+    android:background="#75a25f"
+    android:fitsSystemWindows="true"
+    tools:context=".presentation.game_mode.ChooseGameModeFragment">
+
+    <Button
+        android:id="@+id/button_by_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="90dp"
+        android:width="400dp"
+        android:text="Присоединиться по коду"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_create_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:width="400dp"
+        android:text="Создать игру"
+        app:layout_constraintEnd_toEndOf="@+id/button_by_code"
+        app:layout_constraintStart_toStartOf="@+id/button_by_code"
+        app:layout_constraintTop_toBottomOf="@+id/button_by_code" />
+
+    <Button
+        android:id="@+id/button_random_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:width="400dp"
+        android:text="Присоединиться к случайной игре"
+        app:layout_constraintEnd_toEndOf="@+id/button_create_game"
+        app:layout_constraintStart_toStartOf="@+id/button_create_game"
+        app:layout_constraintTop_toBottomOf="@+id/button_create_game" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/castle_pic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_create_game"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,6 +20,9 @@ class MainMenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentMainMenuBinding.inflate(inflater,container,false)
+        binding.buttonPlay.setOnClickListener{
+            Navigation.findNavController(binding.root).navigate(R.id.action_mainMenuFragment_to_chooseGameModeFragment)
+        }
         return binding.root
     }
 
