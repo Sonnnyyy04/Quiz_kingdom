@@ -11,9 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.palce_holder, MainMenuFragment())
-            .commit()
+//        supportFragmentManager
+//            .beginTransaction()
+//            .replace(R.id.palce_holder, MainMenuFragment())
+//            .commit()
     }
 }

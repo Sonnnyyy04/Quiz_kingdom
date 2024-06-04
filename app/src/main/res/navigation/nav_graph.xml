@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startScreenFragment">
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.quiz_kingdom.presentation.main_menu.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" />
+    <fragment
+        android:id="@+id/startScreenFragment"
+        android:name="com.example.quiz_kingdom.presentation.start_screen.StartScreenFragment"
+        android:label="fragment_start_screen"
+        tools:layout="@layout/fragment_start_screen" >
+        <action
+            android:id="@+id/action_startScreenFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
 </navigation>
