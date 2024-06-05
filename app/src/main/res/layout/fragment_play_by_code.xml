@@ -55,6 +55,7 @@
                 android:background="@drawable/oval_drawable"
                 android:layout_margin="20dp"
                 android:text="0"
+                android:gravity="center"
                 android:fontFamily="@font/blackwood_castle"
                 android:textColor="@color/black"
                 android:textStyle=""
@@ -78,6 +79,7 @@
 
                 android:layout_width="wrap_content"
                 android:text ="0"
+                android:gravity="center"
                 android:textColor="@color/black"
                 android:textSize="90sp"                android:layout_height="wrap_content"/>
         </androidx.cardview.widget.CardView>
@@ -95,6 +97,7 @@
 
                 android:layout_width="wrap_content"
                 android:text ="0"
+                android:gravity="center"
                 android:textColor="@color/black"
                 android:textSize="90sp"                android:layout_height="wrap_content"/>
         </androidx.cardview.widget.CardView>
@@ -109,6 +112,7 @@
                 android:id="@+id/symbol_4"
                 android:layout_width="wrap_content"
                 android:text ="0"
+                android:gravity="center"
                 android:background="@drawable/oval_drawable"
                 android:fontFamily="@font/blackwood_castle"
 
@@ -126,6 +130,7 @@
                 android:id="@+id/symbol_5"
                 android:layout_width="wrap_content"
                 android:text ="0"
+                android:gravity="center"
                 android:background="@drawable/oval_drawable"
                 android:fontFamily="@font/blackwood_castle"
 
@@ -143,24 +148,42 @@
                 android:id="@+id/symbol_6"
                 android:layout_width="wrap_content"
                 android:text ="0"
+                android:gravity="center"
                 android:background="@drawable/oval_drawable"
                 android:fontFamily="@font/blackwood_castle"
 
                 android:textColor="@color/black"
-                android:textSize="90sp"                android:layout_height="wrap_content"/>
+                android:textSize="90sp"
+                android:layout_height="wrap_content"/>
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
     </androidx.cardview.widget.CardView>
+
     <EditText
         android:id="@+id/code"
-        android:text="gg"
-        app:layout_constraintTop_toTopOf="@id/table"
-        app:layout_constraintStart_toStartOf="@id/table"
-        app:layout_constraintEnd_toEndOf="@id/table"
-        app:layout_constraintBottom_toBottomOf="@id/table"
-        android:alpha="1"
         android:layout_width="0dp"
-        android:layout_height="0dp"/>
+        android:layout_height="0dp"
+        android:alpha="1"
+        android:hint="Введите ваш код"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/table"
+        app:layout_constraintEnd_toEndOf="@id/table"
+        app:layout_constraintStart_toStartOf="@id/table"
+        app:layout_constraintTop_toTopOf="@id/table" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/wooden_brown"
+        android:fontFamily="@font/blackwood_castle"
+        android:text="продолжить"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,9 @@
     <style name="Base.Theme.Quiz_kingdom" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="Theme.Quiz_kingdom" parent="Base.Theme.Quiz_kingdom" />
